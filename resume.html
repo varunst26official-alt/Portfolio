@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varun ST - Senior Mendix Developer & Module Lead Resume</title>
+  <style>
+    /* ATS-Optimized Clean Typography & Styling */
+    @page {
+      size: A4;
+      margin: 14mm 16mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1a1a1a;
+      line-height: 1.45;
+      font-size: 10pt;
+      background-color: #f8fafc;
+      padding: 24px;
+    }
+
+    .resume-container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 36px 44px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+    }
+
+    /* Action Bar (Screen Only) */
+    .action-bar {
+      max-width: 820px;
+      margin: 0 auto 16px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn-print {
+      background: #4f46e5;
+      color: #ffffff;
+      border: none;
+      padding: 8px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+    }
+
+    .btn-back {
+      color: #475569;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    /* Header */
+    header {
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 22pt;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #0f172a;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .headline {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #3730a3;
+      margin-bottom: 6px;
+    }
+
+    .contact-line {
+      font-size: 9pt;
+      color: #475569;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .contact-line a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    /* Section Headings */
+    h2 {
+      font-size: 11pt;
+      font-weight: 800;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 3px;
+      margin-top: 14px;
+      margin-bottom: 8px;
+    }
+
+    /* Summary */
+    .summary-text {
+      font-size: 9.5pt;
+      color: #334155;
+      text-align: justify;
+      line-height: 1.5;
+    }
+
+    /* Skills Grid */
+    .skills-section {
+      font-size: 9pt;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    .skills-row {
+      margin-bottom: 4px;
+    }
+
+    .skills-label {
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    /* Experience & Projects */
+    .experience-item {
+      margin-bottom: 12px;
+    }
+
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+
+    .item-title {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .item-company {
+      font-size: 9.5pt;
+      font-weight: 600;
+      color: #4338ca;
+    }
+
+    .item-date {
+      font-size: 9pt;
+      font-weight: 600;
+      color: #64748b;
+    }
+
+    .item-location {
+      font-size: 8.5pt;
+      color: #64748b;
+      font-style: italic;
+    }
+
+    /* Bullet Lists */
+    ul {
+      list-style-type: disc;
+      margin-left: 18px;
+      margin-top: 4px;
+    }
+
+    li {
+      font-size: 9pt;
+      color: #334155;
+      margin-bottom: 3.5px;
+      line-height: 1.45;
+    }
+
+    li strong {
+      color: #0f172a;
+    }
+
+    /* Certifications */
+    .cert-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 9pt;
+      margin-bottom: 3px;
+    }
+
+    .cert-name {
+      font-weight: 600;
+      color: #0f172a;
+    }
+
+    .cert-issuer {
+      color: #64748b;
+    }
+
+    /* Print Stylesheet Overrides */
+    @media print {
+      body {
+        background: none;
+        padding: 0;
+        font-size: 9.5pt;
+      }
+
+      .action-bar {
+        display: none !important;
+      }
+
+      .resume-container {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+        border-radius: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen Top Bar with Print/Save Trigger -->
+  <div class="action-bar">
+    <a href="index.html" class="btn-back">← Back to Portfolio</a>
+    <div>
+      <span style="font-size: 12px; color: #64748b; margin-right: 12px;">ATS-Friendly Single-Column Layout</span>
+      <button onclick="window.print()" class="btn-print">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 6 2 18 2 18 9"></polyline>
+          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+          <rect x="6" y="14" width="12" height="8"></rect>
+        </svg>
+        Print or Save as PDF
+      </button>
+    </div>
+  </div>
+
+  <div class="resume-container">
+
+    <!-- HEADER -->
+    <header>
+      <h1>VARUN ST</h1>
+      <div class="headline">Senior Mendix Developer & Module Lead | Mendix Advanced Certified</div>
+      <div class="contact-line">
+        <span>📍 Chennai, India (Open to UAE & Global Relocation)</span>
+        <span>✉️ <a href="mailto:varunst26official@gmail.com">varunst26official@gmail.com</a></span>
+        <span>🔗 <a href="https://www.linkedin.com/in/varun-s-t-b35b5b205">linkedin.com/in/varun-s-t-b35b5b205</a></span>
+        <span>🌐 <a href="https://varunst26official-alt.github.io/Portfolio/">varunst26official-alt.github.io/Portfolio</a></span>
+        <span>💻 <a href="https://github.com/varunst26official-alt">github.com/varunst26official-alt</a></span>
+      </div>
+    </header>
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <section>
+      <h2>Professional Summary</h2>
+      <p class="summary-text">
+        High-performing <strong>Senior Mendix Developer & Module Lead</strong> with <strong>3.0 Years of Experience</strong> specializing in enterprise rapid application delivery, core Java microservices, and AI-augmented automation. Proven track record architecting mission-critical platforms for marquee clients including <strong>Indus Towers, KPMG, KHDA Dubai (Government of Dubai), Dr. Reddy’s Laboratories, and Adani Group</strong>. Achieved a <strong>100% On-Time Go-Live Record</strong> across 11 enterprise projects, notably executing concurrent delivery across multiple enterprise accounts simultaneously with zero production defects. Certified in <strong>Mendix Advanced</strong>, Generative AI, and RAG architectures, with expertise in multithreaded Java actions, complex XPath optimization, and automated regression testing.
+      </p>
+    </section>
+
+    <!-- CORE TECHNICAL COMPETENCIES -->
+    <section>
+      <h2>Core Technical Competencies</h2>
+      <div class="skills-section">
+        <div class="skills-row">
+          <span class="skills-label">Low-Code Platform:</span> Mendix 9 & 10 (Studio Pro), Domain Modeling, Microflows, Nanoflows, Task Queues, XPath Optimization, Workflow Engine, Mendix Security & Multi-Tenancy.
+        </div>
+        <div class="skills-row">
+          <span class="skills-label">Programming & Backend:</span> Core Java (Java 17/21), Custom Java Actions, Concurrency & Multithreading, RESTful APIs, OData v4, SOAP Services, JSON/XML Handling.
+        </div>
+        <div class="skills-row">
+          <span class="skills-label">Databases & Data Management:</span> PostgreSQL, MS SQL Server, Relational Modeling, Index Optimization, Connection Pooling, Query Performance Tuning.
+        </div>
+        <div class="skills-row">
+          <span class="skills-label">Testing & Automation:</span> Playwright Automated E2E Testing, Mendix ATS (Automated Test Suite), Unit Testing, Regression Validation, Postman.
+        </div>
+        <div class="skills-row">
+          <span class="skills-label">AI & Emerging Tech:</span> Mendix Maia, LLM API Integration (Claude, OpenAI), Prompt Engineering, RAG (Retrieval-Augmented Generation) Architecture, Vector Search.
+        </div>
+        <div class="skills-row">
+          <span class="skills-label">Methodologies & Leadership:</span> Agile / Scrum, Module Leadership, Sprint Backlog Grooming, Code Reviews, Client Stakeholder Management, Bilingual (RTL Arabic) Localization.
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <section>
+      <h2>Professional Experience</h2>
+      <div class="experience-item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Senior Mendix Developer & Module Lead</span> — <span class="item-company">RapidData Technologies</span>
+          </div>
+          <span class="item-date">March 2024 – Present (3.0 YOE)</span>
+        </div>
+        <div class="item-location">Chennai, India • Enterprise Low-Code Consulting</div>
+        <ul>
+          <li><strong>Enterprise Delivery & Architecture:</strong> Spearheaded full lifecycle development, technical architecture, and deployment across 11+ production applications on Mendix 9 and 10 platforms.</li>
+          <li><strong>Concurrent Multi-Account Execution:</strong> Successfully delivered sprint commitments simultaneously across three high-stakes enterprise clients (Indus Towers, KPMG, and Dr. Reddy's) with zero milestone slippage.</li>
+          <li><strong>Java Microservice Extensions:</strong> Built high-throughput custom Java actions for OCR processing, complex data parsing, and multi-tenant security handshakes where out-of-the-box low-code features reached technical limits.</li>
+          <li><strong>Module Leadership & Governance:</strong> Managed sprint deliverables for a team of developers, conducted rigorous peer code reviews, enforced database indexing standards, and led technical demo reviews directly with client directors.</li>
+          <li><strong>Quality & Test Automation:</strong> Integrated Playwright test suites for automated UI/API regression, decreasing manual QA verification overhead by 55% prior to production releases.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- KEY CLIENT DELIVERIES & CASE STUDIES -->
+    <section>
+      <h2>Key Client Deliveries & Architectural Impact</h2>
+      
+      <div class="experience-item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Indus Towers</span> — <span class="item-company">TowerOps OCR & Batch Processing Engine</span>
+          </div>
+          <span class="item-date">Telecom Infrastructure</span>
+        </div>
+        <ul>
+          <li>Engineered an asynchronous batch processing pipeline integrated with custom Java 17 OCR actions to extract telecom tower maintenance records from unstructured PDF and image formats.</li>
+          <li>Implemented asynchronous task queue routing to process 10,000+ records per batch, reducing manual invoice reconciliation cycles by 70%. Cleared client technical interviews and received formal appreciation.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">KPMG</span> — <span class="item-company">Enterprise Microflow Suite & Automated Audit Verification</span>
+          </div>
+          <span class="item-date">Big 4 Advisory</span>
+        </div>
+        <ul>
+          <li>Designed and implemented enterprise-grade audit trail microflows, data reconciliation algorithms, and multi-entity approval trees under stringent audit guidelines.</li>
+          <li>Achieved zero-regression production rollout; awarded client appreciation certificate from KPMG delivery stakeholders for timely, robust execution.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">KHDA Dubai (Government of Dubai)</span> — <span class="item-company">Faculty Services Licensing Portal</span>
+          </div>
+          <span class="item-date">UAE Production</span>
+        </div>
+        <ul>
+          <li>Engineered core modules for higher education licensing, faculty clearance workflows, and external multi-currency payment gateway integrations.</li>
+          <li>Architected complete bilingual English and Arabic Right-to-Left (RTL) dynamic localization across all UI layouts and automated PDF certificate generation microflows.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Dr. Reddy’s Laboratories (DRL)</span> — <span class="item-company">Operations & Compliance Management Suite</span>
+          </div>
+          <span class="item-date">Pharmaceuticals & Life Sciences</span>
+        </div>
+        <ul>
+          <li>Built GxP-compliant approval workflows, strict electronic signature audit trails, and role-based data isolation adhering to international FDA/GMP regulatory guidelines.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Adani Group</span> — <span class="item-company">Adani Asset Operations Hub</span>
+          </div>
+          <span class="item-date">Energy & Infrastructure</span>
+        </div>
+        <ul>
+          <li>Automated large-scale infrastructure maintenance routing and equipment tracking, optimizing PostgreSQL queries to reduce microflow latency by 45%.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section>
+      <h2>Official Certifications & Accreditations</h2>
+      <div class="cert-item">
+        <span class="cert-name">Mendix Advanced Developer Certified</span>
+        <span class="cert-issuer">Siemens / Mendix Official Credential</span>
+      </div>
+      <div class="cert-item">
+        <span class="cert-name">Prompt Engineering Certification (2026)</span>
+        <span class="cert-issuer">AI-Augmented Engineering</span>
+      </div>
+      <div class="cert-item">
+        <span class="cert-name">Generative AI Specialist (2026)</span>
+        <span class="cert-issuer">Autonomous Agents & LLM Toolchains</span>
+      </div>
+      <div class="cert-item">
+        <span class="cert-name">RAG AI Chatbot Architecture (2026)</span>
+        <span class="cert-issuer">Retrieval-Augmented Generation</span>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+      <h2>Education</h2>
+      <div class="item-header">
+        <div>
+          <span class="item-title">Bachelor of Technology (B.Tech) in Information Technology</span>
+        </div>
+        <span class="item-date">2020 – 2024</span>
+      </div>
+      <div class="item-company" style="color: #475569; font-size: 9pt;">Sri Sairam Engineering Institutions • Anna University Affiliated</div>
+    </section>
+
+  </div>
+
+</body>
+</html>
