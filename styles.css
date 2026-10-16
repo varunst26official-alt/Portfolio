@@ -1,0 +1,74 @@
+/* Picto White Theme Stylesheet for Varun ST */
+
+/* Base & Typography */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #334155;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Picto Signature Silver-Grey Studio Gradient Background */
+.picto-hero-bg {
+  background: radial-gradient(circle at 75% 45%, #cbd4e1 0%, #dae1eb 32%, #eaf0f6 65%, #f4f7fa 100%);
+}
+
+/* Custom Clean Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4f46e5;
+}
+
+/* Picto Card Transitions & Filter Effects */
+.project-item-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-item-card.hidden-card {
+  display: none !important;
+}
+
+/* Floating Badges Soft Animation */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+/* Code block font & syntax */
+pre code {
+  font-family: 'JetBrains Mono', monospace;
+  line-height: 1.6;
+}
+
+/* Active Nav Links */
+.nav-item.active {
+  color: #4f46e5 !important;
+}
