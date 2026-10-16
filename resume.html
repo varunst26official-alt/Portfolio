@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Varun ST — Senior Mendix Developer & Module Lead | Executive CV</title>
+  <title>Varun ST — Senior Mendix Developer & Module Lead | 1-Page Executive Resume</title>
   
   <!-- Modern Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
-    /* CSS Variables for Clean Contemporary Theme */
+    /* Strict 1-Page Contemporary Theme */
     :root {
-      --primary: #4f46e5;
-      --primary-dark: #3730a3;
+      --primary: #4338ca;
+      --primary-dark: #312e81;
       --primary-light: #eef2ff;
       --primary-border: #c7d2fe;
       --slate-900: #0f172a;
@@ -22,18 +22,17 @@
       --slate-700: #334155;
       --slate-600: #475569;
       --slate-500: #64748b;
-      --slate-400: #94a3b8;
       --slate-200: #e2e8f0;
       --slate-100: #f1f5f9;
       --slate-50: #f8fafc;
-      --emerald-600: #059669;
+      --emerald-700: #047857;
       --emerald-50: #ecfdf5;
       --emerald-border: #a7f3d0;
     }
 
     @page {
-      size: A4;
-      margin: 12mm 14mm;
+      size: A4 portrait;
+      margin: 8mm 10mm;
     }
 
     * {
@@ -46,58 +45,55 @@
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       color: var(--slate-700);
       background-color: #f1f5f9;
-      line-height: 1.5;
-      font-size: 9.5pt;
-      padding: 24px 16px;
+      line-height: 1.38;
+      font-size: 8.4pt;
+      padding: 20px 12px;
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Top Floating Action Bar */
+    /* Top Action Bar (Screen Only) */
     .top-action-bar {
-      max-width: 900px;
-      margin: 0 auto 16px auto;
+      max-width: 860px;
+      margin: 0 auto 12px auto;
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      gap: 12px;
       background: #ffffff;
-      padding: 12px 20px;
-      border-radius: 14px;
-      box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+      padding: 10px 18px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(15, 23, 42, 0.05);
       border: 1px solid var(--slate-200);
     }
 
     .btn-group {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
     }
 
     .btn {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
       font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 600;
-      padding: 8px 16px;
-      border-radius: 8px;
+      padding: 6px 14px;
+      border-radius: 6px;
       cursor: pointer;
       text-decoration: none;
-      transition: all 0.2s ease;
+      transition: all 0.15s ease;
       border: 1px solid transparent;
     }
 
     .btn-primary {
       background: var(--primary);
       color: #ffffff;
-      box-shadow: 0 2px 8px rgba(79, 70, 229, 0.25);
+      box-shadow: 0 2px 6px rgba(67, 56, 202, 0.25);
     }
 
     .btn-primary:hover {
       background: var(--primary-dark);
-      transform: translateY(-1px);
     }
 
     .btn-secondary {
@@ -108,501 +104,441 @@
 
     .btn-secondary:hover {
       background: var(--slate-50);
-      border-color: var(--slate-400);
       color: var(--slate-900);
     }
 
-    /* Resume Document Wrapper */
+    /* Resume Document Wrapper (Strict 1-Page Dimensions) */
     .resume-canvas {
-      max-width: 900px;
+      max-width: 860px;
       margin: 0 auto;
       background: #ffffff;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.07);
       border: 1px solid var(--slate-200);
-      overflow: hidden;
+      padding: 24px 28px;
+      position: relative;
     }
 
-    /* Executive Header */
-    .resume-header {
-      padding: 32px 36px 24px 36px;
-      border-bottom: 2px solid var(--slate-100);
-      background: linear-gradient(180deg, #ffffff 0%, var(--slate-50) 100%);
+    /* Header */
+    .header-block {
+      border-bottom: 1.5px solid var(--slate-200);
+      padding-bottom: 10px;
+      margin-bottom: 10px;
     }
 
     .header-top {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
-      gap: 16px;
-      margin-bottom: 12px;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 4px;
     }
 
-    .name-block h1 {
+    .name-title h1 {
       font-family: 'Outfit', sans-serif;
-      font-size: 24pt;
+      font-size: 21pt;
       font-weight: 800;
       color: var(--slate-900);
       letter-spacing: -0.5px;
       line-height: 1.1;
-      margin-bottom: 6px;
+      display: inline-block;
+      margin-right: 12px;
     }
 
-    .role-badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .role-title {
+    .title-sub {
       font-family: 'Outfit', sans-serif;
-      font-size: 11pt;
+      font-size: 10.5pt;
       font-weight: 700;
       color: var(--primary);
+      display: inline-block;
+    }
+
+    .badges-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
     }
 
     .pill-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
       font-family: 'JetBrains Mono', monospace;
-      font-size: 7.5pt;
-      font-weight: 600;
-      padding: 3px 8px;
-      border-radius: 6px;
+      font-size: 7pt;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 4px;
       text-transform: uppercase;
       letter-spacing: 0.3px;
+      white-space: nowrap;
     }
 
     .pill-emerald {
       background: var(--emerald-50);
-      color: var(--emerald-600);
+      color: var(--emerald-700);
       border: 1px solid var(--emerald-border);
     }
 
     .pill-indigo {
       background: var(--primary-light);
-      color: var(--primary-dark);
+      color: var(--primary);
       border: 1px solid var(--primary-border);
     }
 
-    /* Contact Chips */
-    .contact-grid {
+    /* Contact Links Line */
+    .contact-row {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px 14px;
-      margin-top: 14px;
-      font-size: 8.5pt;
+      align-items: center;
+      gap: 6px 14px;
+      font-size: 8pt;
+      color: var(--slate-600);
+      margin-top: 5px;
     }
 
     .contact-item {
       display: inline-flex;
       align-items: center;
-      gap: 5px;
-      color: var(--slate-600);
+      gap: 4px;
+      color: var(--slate-700);
       text-decoration: none;
-      background: #ffffff;
-      padding: 4px 10px;
-      border-radius: 6px;
-      border: 1px solid var(--slate-200);
-      transition: all 0.15s ease;
     }
 
     .contact-item:hover {
       color: var(--primary);
-      border-color: var(--primary-border);
-      background: var(--primary-light);
     }
 
     .contact-item svg {
-      width: 12px;
-      height: 12px;
-      flex-shrink: 0;
+      width: 11px;
+      height: 11px;
       color: var(--primary);
+      flex-shrink: 0;
     }
 
-    /* Main Body 2-Column Split */
-    .resume-body {
+    /* 2-Column High-Efficiency Grid */
+    .resume-grid {
       display: grid;
-      grid-template-columns: 1fr 310px;
-      gap: 0;
-    }
-
-    .main-column {
-      padding: 28px 32px;
-      border-right: 1px solid var(--slate-200);
-    }
-
-    .side-column {
-      padding: 28px 24px;
-      background: #fafbfc;
+      grid-template-columns: 1fr 270px;
+      gap: 20px;
     }
 
     /* Section Headers */
-    .section-title {
-      font-family: 'Outfit', sans-serif;
-      font-size: 10.5pt;
-      font-weight: 800;
-      color: var(--slate-900);
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 12px;
-      margin-top: 18px;
-    }
-
-    .section-title:first-child {
-      margin-top: 0;
-    }
-
-    .section-title::after {
-      content: "";
-      flex: 1;
-      height: 1.5px;
-      background: var(--slate-200);
-    }
-
-    .section-icon {
-      width: 14px;
-      height: 14px;
-      color: var(--primary);
-      flex-shrink: 0;
-    }
-
-    /* Summary Card */
-    .summary-box {
-      font-size: 9pt;
-      line-height: 1.55;
-      color: var(--slate-700);
-      background: var(--slate-50);
-      border: 1px solid var(--slate-200);
-      border-left: 3px solid var(--primary);
-      padding: 12px 14px;
-      border-radius: 6px;
-      margin-bottom: 16px;
-      text-align: justify;
-    }
-
-    .summary-box strong {
-      color: var(--slate-900);
-    }
-
-    /* Experience Card */
-    .job-card {
-      margin-bottom: 16px;
-      break-inside: avoid;
-    }
-
-    .job-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 8px;
-      margin-bottom: 4px;
-    }
-
-    .job-title {
-      font-family: 'Outfit', sans-serif;
-      font-size: 10.5pt;
-      font-weight: 700;
-      color: var(--slate-900);
-    }
-
-    .job-company {
-      font-size: 9pt;
-      font-weight: 600;
-      color: var(--primary);
-    }
-
-    .job-meta {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 8pt;
-      font-weight: 600;
-      color: var(--slate-500);
-      background: var(--slate-100);
-      padding: 2px 7px;
-      border-radius: 4px;
-      white-space: nowrap;
-    }
-
-    /* Project Items */
-    .project-entry {
-      background: #ffffff;
-      border: 1px solid var(--slate-200);
-      border-radius: 8px;
-      padding: 11px 13px;
-      margin-bottom: 10px;
-      break-inside: avoid;
-      transition: border-color 0.15s ease;
-    }
-
-    .project-entry:hover {
-      border-color: var(--primary-border);
-    }
-
-    .project-header-line {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 6px;
-      margin-bottom: 4px;
-    }
-
-    .project-client {
+    .sec-heading {
       font-family: 'Outfit', sans-serif;
       font-size: 9.5pt;
       font-weight: 800;
       color: var(--slate-900);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 9px;
+      margin-bottom: 6px;
+    }
+
+    .sec-heading:first-child {
+      margin-top: 0;
+    }
+
+    .sec-heading::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--slate-200);
+    }
+
+    .sec-icon {
+      width: 12px;
+      height: 12px;
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+
+    /* Summary */
+    .summary-text {
+      font-size: 8.2pt;
+      line-height: 1.42;
+      color: var(--slate-700);
+      text-align: justify;
+      margin-bottom: 8px;
+    }
+
+    .summary-text strong {
+      color: var(--slate-900);
+    }
+
+    /* Work Experience */
+    .exp-item {
+      margin-bottom: 8px;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 3px;
+    }
+
+    .exp-role {
+      font-family: 'Outfit', sans-serif;
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: var(--slate-900);
+    }
+
+    .exp-company {
+      font-size: 8.5pt;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .exp-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: var(--slate-500);
+    }
+
+    ul.bullets {
+      list-style-type: none;
+    }
+
+    ul.bullets li {
+      position: relative;
+      padding-left: 12px;
+      font-size: 8.1pt;
+      color: var(--slate-700);
+      margin-bottom: 3px;
+      line-height: 1.38;
+    }
+
+    ul.bullets li::before {
+      content: "▪";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+      font-size: 8.5pt;
+      line-height: 1.2;
+    }
+
+    ul.bullets li strong {
+      color: var(--slate-900);
+    }
+
+    /* Key Client Projects */
+    .project-card {
+      background: #ffffff;
+      border: 1px solid var(--slate-200);
+      border-radius: 6px;
+      padding: 6.5px 9px;
+      margin-bottom: 5px;
+    }
+
+    .project-title-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 2px;
+    }
+
+    .project-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 8.8pt;
+      font-weight: 700;
+      color: var(--slate-900);
+    }
+
+    .tag-status {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 6.5pt;
+      font-weight: 700;
+      padding: 1px 5px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+
+    .tag-amber { background: #fffbeb; color: #b45309; border: 1px solid #fde68a; }
+    .tag-sky { background: #f0f9ff; color: #0369a1; border: 1px solid #bae6fd; }
+    .tag-purple { background: #faf5ff; color: #7e22ce; border: 1px solid #e9d5ff; }
+
+    .project-p {
+      font-size: 7.9pt;
+      color: var(--slate-600);
+      line-height: 1.35;
+      margin-bottom: 3px;
+    }
+
+    .chips-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+    }
+
+    .mini-chip {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 6.5pt;
+      background: var(--slate-100);
+      color: var(--slate-700);
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+
+    /* Sidebar Right Column */
+    .metric-strip {
+      background: linear-gradient(135deg, #4338ca 0%, #2563eb 100%);
+      color: #ffffff;
+      padding: 7px 10px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .metric-col .num {
+      font-family: 'Outfit', sans-serif;
+      font-size: 11.5pt;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .metric-col .label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 6pt;
+      text-transform: uppercase;
+      opacity: 0.9;
+      margin-top: 1px;
+    }
+
+    /* Sidebar Skill Category */
+    .skill-group {
+      margin-bottom: 7px;
+    }
+
+    .skill-cat-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 7.8pt;
+      font-weight: 700;
+      color: var(--slate-900);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin-bottom: 3px;
+    }
+
+    .skill-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3px;
+    }
+
+    .skill-pill {
+      font-size: 7.4pt;
+      background: #ffffff;
+      border: 1px solid var(--slate-200);
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: var(--slate-800);
+      font-weight: 500;
+    }
+
+    .skill-pill.focus {
+      background: var(--primary-light);
+      border-color: var(--primary-border);
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    /* Certifications Compact Cards */
+    .cert-mini {
+      background: #ffffff;
+      border: 1px solid var(--slate-200);
+      border-radius: 5px;
+      padding: 5px 8px;
+      margin-bottom: 4px;
       display: flex;
       align-items: center;
       gap: 6px;
     }
 
-    .project-badge {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 7pt;
-      font-weight: 700;
-      padding: 1.5px 6px;
-      border-radius: 4px;
-      text-transform: uppercase;
-    }
-
-    .badge-amber {
-      background: #fffbeb;
-      color: #b45309;
-      border: 1px solid #fde68a;
-    }
-
-    .badge-sky {
-      background: #f0f9ff;
-      color: #0369a1;
-      border: 1px solid #bae6fd;
-    }
-
-    .badge-purple {
-      background: #faf5ff;
-      color: #7e22ce;
-      border: 1px solid #e9d5ff;
-    }
-
-    .project-desc {
-      font-size: 8.5pt;
-      color: var(--slate-600);
-      line-height: 1.45;
-      margin-bottom: 6px;
-    }
-
-    .tech-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 4px;
-    }
-
-    .tech-tag {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 7pt;
-      font-weight: 500;
-      background: var(--slate-100);
-      color: var(--slate-700);
-      padding: 1px 6px;
-      border-radius: 4px;
-    }
-
-    /* Bullet Points */
-    ul.bullet-list {
-      list-style-type: none;
-      margin-top: 6px;
-    }
-
-    ul.bullet-list li {
-      position: relative;
-      padding-left: 14px;
-      font-size: 8.8pt;
-      color: var(--slate-700);
-      margin-bottom: 4px;
-      line-height: 1.45;
-    }
-
-    ul.bullet-list li::before {
-      content: "▪";
-      position: absolute;
-      left: 0;
-      color: var(--primary);
-      font-size: 9pt;
-      line-height: 1.2;
-    }
-
-    ul.bullet-list li strong {
-      color: var(--slate-900);
-    }
-
-    /* Sidebar Skills Categories */
-    .skill-block {
-      margin-bottom: 14px;
-      break-inside: avoid;
-    }
-
-    .skill-category-name {
-      font-family: 'Outfit', sans-serif;
-      font-size: 8.5pt;
-      font-weight: 700;
-      color: var(--slate-800);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 4px;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
-
-    .skill-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 4px;
-    }
-
-    .skill-chip {
-      font-size: 8pt;
-      background: #ffffff;
-      border: 1px solid var(--slate-200);
-      padding: 3px 8px;
-      border-radius: 5px;
-      color: var(--slate-800);
-      font-weight: 500;
-      display: inline-block;
-    }
-
-    .skill-chip.highlight {
-      background: var(--primary-light);
-      border-color: var(--primary-border);
-      color: var(--primary-dark);
-      font-weight: 600;
-    }
-
-    /* Sidebar Certifications Cards */
-    .cert-card {
-      background: #ffffff;
-      border: 1px solid var(--slate-200);
-      border-radius: 8px;
-      padding: 9px 11px;
-      margin-bottom: 7px;
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
-      break-inside: avoid;
-    }
-
-    .cert-icon-wrap {
-      width: 22px;
-      height: 22px;
-      border-radius: 5px;
+    .cert-badge-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
       background: var(--primary-light);
       color: var(--primary);
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 8pt;
       flex-shrink: 0;
-      margin-top: 1px;
+      font-weight: 800;
     }
 
-    .cert-info h4 {
+    .cert-text h5 {
       font-family: 'Outfit', sans-serif;
-      font-size: 8.5pt;
+      font-size: 7.8pt;
       font-weight: 700;
       color: var(--slate-900);
-      line-height: 1.25;
+      line-height: 1.15;
     }
 
-    .cert-info p {
-      font-size: 7.5pt;
+    .cert-text span {
+      font-size: 6.8pt;
       color: var(--slate-500);
-      margin-top: 1px;
+      display: block;
     }
 
-    /* Education & Highlights */
-    .edu-card {
+    /* Education Box */
+    .edu-box {
       background: #ffffff;
       border: 1px solid var(--slate-200);
-      border-radius: 8px;
-      padding: 10px 12px;
-      break-inside: avoid;
+      border-radius: 5px;
+      padding: 6px 8px;
     }
 
     .edu-degree {
       font-family: 'Outfit', sans-serif;
-      font-size: 8.8pt;
+      font-size: 8pt;
       font-weight: 700;
       color: var(--slate-900);
     }
 
-    .edu-inst {
-      font-size: 8pt;
+    .edu-school {
+      font-size: 7.4pt;
       color: var(--primary);
       font-weight: 600;
     }
 
-    .edu-year {
+    .edu-dates {
       font-family: 'JetBrains Mono', monospace;
-      font-size: 7.5pt;
+      font-size: 6.8pt;
       color: var(--slate-500);
-      margin-top: 2px;
+      margin-top: 1px;
     }
 
-    /* Key Achievement Metric Banner */
-    .metric-banner {
-      background: linear-gradient(135deg, #4f46e5 0%, #3b82f6 100%);
-      color: #ffffff;
-      padding: 10px 12px;
-      border-radius: 8px;
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      text-align: center;
-    }
-
-    .metric-item .val {
-      font-family: 'Outfit', sans-serif;
-      font-size: 13pt;
-      font-weight: 800;
-      line-height: 1;
-    }
-
-    .metric-item .lbl {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 6.5pt;
-      text-transform: uppercase;
-      letter-spacing: 0.3px;
-      opacity: 0.9;
-      margin-top: 2px;
-    }
-
-    /* Toast Notification for Clipboard */
+    /* Toast */
     #copyToast {
       display: none;
       position: fixed;
-      bottom: 24px;
-      right: 24px;
+      bottom: 20px;
+      right: 20px;
       background: #0f172a;
       color: #ffffff;
-      padding: 10px 18px;
-      border-radius: 8px;
-      font-size: 12px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 11px;
       font-weight: 600;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.2);
-      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      z-index: 999;
     }
 
-    /* PRINT SPECIFIC STYLES */
+    /* STRICT SINGLE-PAGE PRINT RULES */
     @media print {
       body {
         background: #ffffff !important;
         padding: 0 !important;
         color: #0f172a !important;
-        font-size: 9pt !important;
+        font-size: 8.2pt !important;
+        line-height: 1.34 !important;
       }
 
       .top-action-bar, #copyToast {
@@ -612,32 +548,24 @@
       .resume-canvas {
         box-shadow: none !important;
         border: none !important;
+        padding: 0 !important;
         max-width: 100% !important;
         border-radius: 0 !important;
       }
 
-      .resume-header {
-        padding: 0 0 16px 0 !important;
-        background: none !important;
+      .header-block {
         border-bottom: 2px solid #0f172a !important;
+        padding-bottom: 8px !important;
+        margin-bottom: 8px !important;
       }
 
-      .resume-body {
-        grid-template-columns: 1fr 270px !important;
+      .resume-grid {
+        grid-template-columns: 1fr 255px !important;
+        gap: 16px !important;
       }
 
-      .main-column {
-        padding: 16px 20px 0 0 !important;
-        border-right: 1px solid #cbd5e1 !important;
-      }
-
-      .side-column {
-        padding: 16px 0 0 18px !important;
-        background: #ffffff !important;
-      }
-
-      .contact-item {
-        border-color: #cbd5e1 !important;
+      .btn {
+        display: none !important;
       }
 
       a {
@@ -645,89 +573,64 @@
         color: inherit !important;
       }
 
-      .btn {
-        display: none !important;
-      }
-    }
-
-    /* Responsive Mobile Screen View */
-    @media (max-width: 768px) {
-      .resume-body {
-        grid-template-columns: 1fr;
-      }
-      .main-column {
-        border-right: none;
-        border-bottom: 1px solid var(--slate-200);
-        padding: 24px 20px;
-      }
-      .side-column {
-        padding: 24px 20px;
-      }
-      .resume-header {
-        padding: 24px 20px;
-      }
-      .name-block h1 {
-        font-size: 20pt;
+      /* Guarantees 0 page spill */
+      .exp-item, .project-card, .cert-mini, .edu-box {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Floating Screen Action Bar -->
+  <!-- Screen Top Bar with 1-Click Actions -->
   <div class="top-action-bar">
     <a href="index.html" class="btn btn-secondary">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="19" y1="12" x2="5" y2="12"></line>
-        <polyline points="12 19 5 12 12 5"></polyline>
-      </svg>
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
       Back to Portfolio
     </a>
 
+    <div style="font-size: 11px; font-weight: 600; color: #4338ca;">
+      ★ Strict 1-Page ATS Certified Format
+    </div>
+
     <div class="btn-group">
       <button onclick="copyPlainText()" class="btn btn-secondary" title="Copy clean plain text formatted for job portals">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-        </svg>
-        Copy Text CV
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        Copy Text
       </button>
 
-      <button onclick="window.print()" class="btn btn-primary" title="Print or save as high-resolution PDF">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="6 9 6 2 18 2 18 9"></polyline>
-          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
-          <rect x="6" y="14" width="12" height="8"></rect>
-        </svg>
-        Print / Save PDF
+      <button onclick="window.print()" class="btn btn-primary" title="Print or save as 1-page PDF">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        Save 1-Page PDF
       </button>
     </div>
   </div>
 
-  <!-- Main Resume Document -->
+  <!-- 1-Page Resume Document Container -->
   <main class="resume-canvas">
 
-    <!-- EXECUTIVE HEADER -->
-    <header class="resume-header">
+    <!-- HEADER BLOCK -->
+    <header class="header-block">
       <div class="header-top">
-        <div class="name-block">
+        <div class="name-title">
           <h1>VARUN ST</h1>
-          <div class="role-badge-row">
-            <span class="role-title">Senior Mendix Developer & Module Lead</span>
-            <span class="pill-badge pill-emerald">Mendix Advanced Certified</span>
-            <span class="pill-badge pill-indigo">3.0 YOE Milestone</span>
-          </div>
+          <span class="title-sub">Senior Mendix Developer & Module Lead</span>
+        </div>
+        <div class="badges-row">
+          <span class="pill-badge pill-emerald">Mendix Advanced Certified</span>
+          <span class="pill-badge pill-indigo">3.0 YOE</span>
         </div>
       </div>
 
-      <!-- Contact Badges with Micro-Icons -->
-      <div class="contact-grid">
+      <!-- Compact Contact Row with Icons -->
+      <div class="contact-row">
         <span class="contact-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-          Chennai, India • Open to UAE / Relocation
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          Chennai, India (Open to UAE & Relocation)
         </span>
         <a href="mailto:varunst26official@gmail.com" class="contact-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
           varunst26official@gmail.com
         </a>
         <a href="https://www.linkedin.com/in/varun-s-t-b35b5b205" target="_blank" rel="noopener noreferrer" class="contact-item">
@@ -735,8 +638,8 @@
           linkedin.com/in/varun-s-t-b35b5b205
         </a>
         <a href="https://varunst26official-alt.github.io/Portfolio/" target="_blank" rel="noopener noreferrer" class="contact-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-          varunst26official-alt.github.io/Portfolio
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          Portfolio: varunst26official-alt.github.io/Portfolio
         </a>
         <a href="https://github.com/varunst26official-alt" target="_blank" rel="noopener noreferrer" class="contact-item">
           <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
@@ -745,290 +648,260 @@
       </div>
     </header>
 
-    <!-- 2-COLUMN BODY -->
-    <div class="resume-body">
+    <!-- 2-COLUMN HIGH-EFFICIENCY LAYOUT -->
+    <div class="resume-grid">
 
-      <!-- LEFT PRIMARY TRACK: Summary, Experience, Flagship Deliveries -->
-      <div class="main-column">
+      <!-- LEFT COLUMN: Summary, Experience, Flagship Projects -->
+      <div>
 
-        <!-- Executive Summary -->
-        <h2 class="section-title">
-          <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        <!-- Professional Summary -->
+        <h2 class="sec-heading">
+          <svg class="sec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
           Executive Summary
         </h2>
-        <div class="summary-box">
-          Results-driven <strong>Senior Mendix Developer & Module Lead</strong> with <strong>3.0 Years of Experience</strong> engineering high-throughput enterprise platforms, custom Java microservices, and AI-augmented automations. Architected mission-critical systems for marquee enterprises including <strong>Indus Towers, KPMG, KHDA Dubai (Government of Dubai), Dr. Reddy’s Laboratories, and Adani Group</strong>. Maintained a <strong>100% On-Time Go-Live Record</strong> across 11 applications, notably executing triple concurrent delivery across Indus Towers, KPMG, and DRL with zero milestone slippage. Certified Mendix Advanced Developer with deep expertise in asynchronous task queues, multithreaded Java batch actions, and Playwright automated regression testing.
-        </div>
+        <p class="summary-text">
+          Results-oriented <strong>Senior Mendix Developer & Module Lead</strong> with <strong>3.0 Years of Experience</strong> engineering rapid enterprise applications, high-throughput Java microservices, and AI-augmented automations. Track record architecting mission-critical platforms for marquee clients including <strong>Indus Towers, KPMG, KHDA Dubai (Government of Dubai), Dr. Reddy’s Laboratories, and Adani Group</strong>. Maintained a <strong>100% On-Time Go-Live Record</strong> across 11 applications, successfully leading concurrent delivery across three enterprise accounts with zero regressions. Certified Mendix Advanced Developer skilled in asynchronous task queues, XPath profiling, custom Java concurrency, and Playwright automated testing.
+        </p>
 
-        <!-- Professional Experience -->
-        <h2 class="section-title">
-          <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+        <!-- Experience -->
+        <h2 class="sec-heading">
+          <svg class="sec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
           Professional Experience
         </h2>
-        <div class="job-card">
-          <div class="job-header">
+
+        <div class="exp-item">
+          <div class="exp-header">
             <div>
-              <div class="job-title">Senior Mendix Developer & Module Lead</div>
-              <div class="job-company">RapidData Technologies • Enterprise Consulting</div>
+              <span class="exp-role">Senior Mendix Developer & Module Lead</span>
+              <span class="exp-company"> • RapidData Technologies</span>
             </div>
-            <span class="job-meta">March 2024 – Present (3.0 YOE)</span>
+            <span class="exp-date">March 2024 – Present (3.0 YOE)</span>
           </div>
-          <ul class="bullet-list">
-            <li><strong>Full-Lifecycle Delivery:</strong> Led technical architecture, microflow optimization, and deployment across 11+ enterprise applications built on Mendix 9 & 10 platforms.</li>
-            <li><strong>Triple Concurrent Execution:</strong> Simultaneously managed and delivered sprint backlogs across three enterprise accounts (Indus Towers, KPMG, and DRL) with zero milestone regressions.</li>
-            <li><strong>Custom Java Extensions:</strong> Built high-performance Java actions for asynchronous OCR processing, custom encryption, and multi-tenant connection pools where low-code modules hit ceilings.</li>
-            <li><strong>Engineering Governance:</strong> Conducted peer code reviews, enforced strict XPath/PostgreSQL indexing standards, and presented sprint reviews directly to client directors and solution architects.</li>
-            <li><strong>QA Automation:</strong> Integrated Playwright automated UI/API regression suites, reducing manual release verification cycles by <strong>55%</strong> prior to production deployments.</li>
+          <ul class="bullets">
+            <li><strong>Enterprise Lifecycle Delivery:</strong> Spearheaded architecture, microflows, and deployment across 11+ production apps on Mendix 9 & 10 platforms.</li>
+            <li><strong>Triple Concurrent Delivery:</strong> Successfully delivered sprint commitments simultaneously across 3 high-stakes client accounts (Indus Towers, KPMG, Dr. Reddy's) with zero SLA slippage.</li>
+            <li><strong>Custom Java Actions:</strong> Engineered multithreaded Java actions for OCR processing, data parsing, and multi-tenant security handshakes where low-code reached ceilings.</li>
+            <li><strong>Module Leadership & QA:</strong> Enforced database indexing standards, conducted peer reviews, and integrated Playwright automated suites to slash QA cycles by <strong>55%</strong>.</li>
           </ul>
         </div>
 
-        <!-- Flagship Enterprise Deliveries -->
-        <h2 class="section-title">
-          <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-          Key Enterprise Deliveries & Impact
+        <!-- Flagship Projects -->
+        <h2 class="sec-heading">
+          <svg class="sec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          Key Client Deliveries & Architectural Impact
         </h2>
 
         <!-- Project 1: Indus Towers -->
-        <div class="project-entry">
-          <div class="project-header-line">
-            <span class="project-client">Indus Towers — TowerOps OCR Batch Engine</span>
-            <span class="project-badge badge-amber">Client Appreciated</span>
+        <div class="project-card">
+          <div class="project-title-line">
+            <span class="project-title">Indus Towers — TowerOps OCR Batch Engine</span>
+            <span class="tag-status tag-amber">Client Appreciated</span>
           </div>
-          <p class="project-desc">
-            Engineered asynchronous batch processing architecture integrated with custom Java 17 OCR actions to extract telecom tower maintenance logs from unstructured PDF/image formats. Processed 10,000+ records per batch, reducing manual invoice audit cycles by <strong>70%</strong>.
+          <p class="project-p">
+            Engineered asynchronous batch processing pipeline integrated with custom Java 17 OCR actions to extract maintenance logs from unstructured PDFs; processed 10,000+ records/batch, reducing manual audit cycles by <strong>70%</strong>.
           </p>
-          <div class="tech-tags">
-            <span class="tech-tag">Java 17</span>
-            <span class="tech-tag">Batch Engine</span>
-            <span class="tech-tag">OCR Actions</span>
-            <span class="tech-tag">Task Queues</span>
-            <span class="tech-tag">PostgreSQL</span>
+          <div class="chips-line">
+            <span class="mini-chip">Java 17</span>
+            <span class="mini-chip">OCR Engine</span>
+            <span class="mini-chip">Task Queues</span>
+            <span class="mini-chip">PostgreSQL</span>
           </div>
         </div>
 
         <!-- Project 2: KPMG -->
-        <div class="project-entry">
-          <div class="project-header-line">
-            <span class="project-client">KPMG — Enterprise Audit & Reconciliation Suite</span>
-            <span class="project-badge badge-sky">Big 4 Advisory</span>
+        <div class="project-card">
+          <div class="project-title-line">
+            <span class="project-title">KPMG — Enterprise Audit & Reconciliation Suite</span>
+            <span class="tag-status tag-sky">Big 4 Advisory</span>
           </div>
-          <p class="project-desc">
-            Architected enterprise audit trail microflows, data reconciliation algorithms, and multi-entity approval trees under strict compliance regulations. Achieved zero-regression cutover; received formal client appreciation for timely execution.
+          <p class="project-p">
+            Architected enterprise audit trail microflows, data reconciliation algorithms, and multi-entity approval trees under strict compliance regulations with zero regression. Received client appreciation.
           </p>
-          <div class="tech-tags">
-            <span class="tech-tag">Mendix 10</span>
-            <span class="tech-tag">Audit Microflows</span>
-            <span class="tech-tag">Multi-Entity</span>
-            <span class="tech-tag">XPath Tuning</span>
+          <div class="chips-line">
+            <span class="mini-chip">Mendix 10</span>
+            <span class="mini-chip">Audit Microflows</span>
+            <span class="mini-chip">Multi-Entity</span>
+            <span class="mini-chip">XPath Tuning</span>
           </div>
         </div>
 
         <!-- Project 3: KHDA Dubai -->
-        <div class="project-entry">
-          <div class="project-header-line">
-            <span class="project-client">KHDA Dubai — Faculty Services Licensing Portal</span>
-            <span class="project-badge badge-purple">UAE Production</span>
+        <div class="project-card">
+          <div class="project-title-line">
+            <span class="project-title">KHDA Dubai — Faculty Services Licensing Portal</span>
+            <span class="tag-status tag-purple">UAE Production</span>
           </div>
-          <p class="project-desc">
-            Delivered core licensing modules, faculty exit clearances, and multi-currency external payment gateway integrations for the Government of Dubai. Architected dynamic bilingual English/Arabic Right-to-Left (RTL) layout localization.
+          <p class="project-p">
+            Delivered higher education licensing workflows, multi-currency payment gateway integrations, and dynamic English/Arabic Right-to-Left (RTL) layout localization for UAE production.
           </p>
-          <div class="tech-tags">
-            <span class="tech-tag">Arabic RTL</span>
-            <span class="tech-tag">Payment Gateway API</span>
-            <span class="tech-tag">REST OData</span>
-            <span class="tech-tag">PDF Microflows</span>
+          <div class="chips-line">
+            <span class="mini-chip">Arabic RTL</span>
+            <span class="mini-chip">Payment Gateway API</span>
+            <span class="mini-chip">REST OData</span>
+            <span class="mini-chip">Mendix 10</span>
           </div>
         </div>
 
         <!-- Project 4: Dr. Reddy's -->
-        <div class="project-entry">
-          <div class="project-header-line">
-            <span class="project-client">Dr. Reddy’s Laboratories — GxP Operations Suite</span>
-            <span class="project-badge badge-purple">Pharma Life Sciences</span>
+        <div class="project-card">
+          <div class="project-title-line">
+            <span class="project-title">Dr. Reddy’s Laboratories — GxP Operations Suite</span>
+            <span class="tag-status tag-purple">Life Sciences</span>
           </div>
-          <p class="project-desc">
-            Built GxP-compliant approval workflows, electronic signature audit trails, and role-based data isolation adhering strictly to FDA/GMP pharmaceutical data integrity guidelines.
+          <p class="project-p">
+            Built GxP-compliant approval workflows and electronic signature audit trails meeting strict FDA/GMP pharmaceutical data integrity regulations.
           </p>
-          <div class="tech-tags">
-            <span class="tech-tag">GxP Compliance</span>
-            <span class="tech-tag">Audit Trails</span>
-            <span class="tech-tag">Role-Based Security</span>
+          <div class="chips-line">
+            <span class="mini-chip">GxP Integrity</span>
+            <span class="mini-chip">Audit Trails</span>
+            <span class="mini-chip">RBAC Security</span>
           </div>
         </div>
 
         <!-- Project 5: Adani Group -->
-        <div class="project-entry">
-          <div class="project-header-line">
-            <span class="project-client">Adani Group — Asset Operations Hub</span>
-            <span class="project-badge badge-sky">Infrastructure</span>
+        <div class="project-card">
+          <div class="project-title-line">
+            <span class="project-title">Adani Group — Asset Operations Hub</span>
+            <span class="tag-status tag-sky">Infrastructure</span>
           </div>
-          <p class="project-desc">
-            Automated maintenance routing and equipment tracking, optimizing database retrieval microflows to reduce query latency by <strong>45%</strong>.
+          <p class="project-p">
+            Automated maintenance routing and asset allocation, optimizing PostgreSQL queries to reduce microflow query latency by <strong>45%</strong>.
           </p>
-          <div class="tech-tags">
-            <span class="tech-tag">Asset Tracking</span>
-            <span class="tech-tag">PostgreSQL Indexing</span>
-            <span class="tech-tag">Workflow Engine</span>
+          <div class="chips-line">
+            <span class="mini-chip">PostgreSQL Indexing</span>
+            <span class="mini-chip">Asset Tracking</span>
+            <span class="mini-chip">Workflow Engine</span>
           </div>
         </div>
 
       </div>
 
-      <!-- RIGHT SIDEBAR: Stats, Tech Stack, Certifications, Education -->
-      <aside class="side-column">
+      <!-- RIGHT SIDEBAR: Metrics, Stack, Certs, Education -->
+      <div>
 
-        <!-- Quick Career Metrics -->
-        <div class="metric-banner">
-          <div class="metric-item">
-            <div class="val">3.0</div>
-            <div class="lbl">YOE Milestone</div>
+        <!-- Quick Metrics Strip -->
+        <div class="metric-strip">
+          <div class="metric-col">
+            <div class="num">3.0</div>
+            <div class="label">YOE Milestone</div>
           </div>
-          <div class="metric-item">
-            <div class="val">11+</div>
-            <div class="lbl">Projects Live</div>
+          <div class="metric-col">
+            <div class="num">11+</div>
+            <div class="label">Projects Live</div>
           </div>
-          <div class="metric-item">
-            <div class="val">100%</div>
-            <div class="lbl">Go-Live Rate</div>
+          <div class="metric-col">
+            <div class="num">100%</div>
+            <div class="label">Go-Live Rate</div>
           </div>
         </div>
 
-        <!-- Technical Skills Breakdown -->
-        <h2 class="section-title">
-          <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+        <!-- Core Technical Stack -->
+        <h2 class="sec-heading">
+          <svg class="sec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
           Technical Stack
         </h2>
 
-        <div class="skill-block">
-          <div class="skill-category-name">Low-Code & Architecture</div>
-          <div class="skill-chips">
-            <span class="skill-chip highlight">Mendix 9 & 10</span>
-            <span class="skill-chip highlight">Domain Models</span>
-            <span class="skill-chip">Task Queues</span>
-            <span class="skill-chip">Microflows</span>
-            <span class="skill-chip">Nanoflows</span>
-            <span class="skill-chip">XPath Optimization</span>
-            <span class="skill-chip">Workflow Engine</span>
-            <span class="skill-chip">App Security / RBAC</span>
+        <div class="skill-group">
+          <div class="skill-cat-title">Mendix & Architecture</div>
+          <div class="skill-pills">
+            <span class="skill-pill focus">Mendix 9 & 10</span>
+            <span class="skill-pill focus">Domain Modeling</span>
+            <span class="skill-pill">Task Queues</span>
+            <span class="skill-pill">Microflows / Nanoflows</span>
+            <span class="skill-pill">XPath Optimization</span>
+            <span class="skill-pill">Workflow Engine</span>
+            <span class="skill-pill">App Security / RBAC</span>
           </div>
         </div>
 
-        <div class="skill-block">
-          <div class="skill-category-name">Backend & Programming</div>
-          <div class="skill-chips">
-            <span class="skill-chip highlight">Core Java (17/21)</span>
-            <span class="skill-chip highlight">Custom Java Actions</span>
-            <span class="skill-chip">Concurrency</span>
-            <span class="skill-chip">RESTful APIs</span>
-            <span class="skill-chip">OData v4</span>
-            <span class="skill-chip">SOAP Integration</span>
-            <span class="skill-chip">JSON / XML</span>
+        <div class="skill-group">
+          <div class="skill-cat-title">Backend & Programming</div>
+          <div class="skill-pills">
+            <span class="skill-pill focus">Core Java (17/21)</span>
+            <span class="skill-pill focus">Custom Java Actions</span>
+            <span class="skill-pill">Concurrency</span>
+            <span class="skill-pill">RESTful APIs</span>
+            <span class="skill-pill">OData v4</span>
+            <span class="skill-pill">SOAP Integration</span>
+            <span class="skill-pill">JSON / XML</span>
           </div>
         </div>
 
-        <div class="skill-block">
-          <div class="skill-category-name">Databases & Performance</div>
-          <div class="skill-chips">
-            <span class="skill-chip highlight">PostgreSQL</span>
-            <span class="skill-chip">MS SQL Server</span>
-            <span class="skill-chip">Relational Modeling</span>
-            <span class="skill-chip">Query Profiling</span>
-            <span class="skill-chip">Index Tuning</span>
+        <div class="skill-group">
+          <div class="skill-cat-title">Databases & Testing</div>
+          <div class="skill-pills">
+            <span class="skill-pill focus">PostgreSQL</span>
+            <span class="skill-pill">MS SQL Server</span>
+            <span class="skill-pill">Index Profiling</span>
+            <span class="skill-pill focus">Playwright E2E</span>
+            <span class="skill-pill">Mendix ATS</span>
+            <span class="skill-pill">Postman</span>
           </div>
         </div>
 
-        <div class="skill-block">
-          <div class="skill-category-name">Testing & Automation</div>
-          <div class="skill-chips">
-            <span class="skill-chip highlight">Playwright E2E</span>
-            <span class="skill-chip">Mendix ATS</span>
-            <span class="skill-chip">Unit Testing</span>
-            <span class="skill-chip">Regression Suites</span>
-            <span class="skill-chip">Postman</span>
+        <div class="skill-group">
+          <div class="skill-cat-title">AI & Cloud Toolchains</div>
+          <div class="skill-pills">
+            <span class="skill-pill focus">Mendix Maia</span>
+            <span class="skill-pill">LLM Connectors</span>
+            <span class="skill-pill">Prompt Engineering</span>
+            <span class="skill-pill">RAG Architecture</span>
+            <span class="skill-pill">mxcli / CI-CD</span>
+            <span class="skill-pill">Arabic RTL UI</span>
           </div>
         </div>
 
-        <div class="skill-block">
-          <div class="skill-category-name">AI & Cloud Toolchains</div>
-          <div class="skill-chips">
-            <span class="skill-chip highlight">Mendix Maia</span>
-            <span class="skill-chip">LLM Connectors</span>
-            <span class="skill-chip">Prompt Engineering</span>
-            <span class="skill-chip">RAG Architectures</span>
-            <span class="skill-chip">mxcli / CI-CD</span>
-            <span class="skill-chip">Docker Basics</span>
-          </div>
-        </div>
-
-        <div class="skill-block">
-          <div class="skill-category-name">Methodologies</div>
-          <div class="skill-chips">
-            <span class="skill-chip">Agile / Scrum</span>
-            <span class="skill-chip">Module Leadership</span>
-            <span class="skill-chip">Code Reviews</span>
-            <span class="skill-chip">Arabic RTL UI</span>
-          </div>
-        </div>
-
-        <!-- Verified Accreditations -->
-        <h2 class="section-title">
-          <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+        <!-- Official Certifications -->
+        <h2 class="sec-heading">
+          <svg class="sec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
           Certifications
         </h2>
 
-        <div class="cert-card">
-          <div class="cert-icon-wrap">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          </div>
-          <div class="cert-info">
-            <h4>Mendix Advanced Developer</h4>
-            <p>Siemens / Mendix Official Certified</p>
+        <div class="cert-mini">
+          <div class="cert-badge-dot">✓</div>
+          <div class="cert-text">
+            <h5>Mendix Advanced Developer</h5>
+            <span>Siemens / Mendix Official Credential</span>
           </div>
         </div>
 
-        <div class="cert-card">
-          <div class="cert-icon-wrap">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          </div>
-          <div class="cert-info">
-            <h4>Prompt Engineering Certification</h4>
-            <p>Completed 2026 • AI-Augmented Engineering</p>
+        <div class="cert-mini">
+          <div class="cert-badge-dot">✓</div>
+          <div class="cert-text">
+            <h5>Prompt Engineering Certification</h5>
+            <span>Completed 2026 • AI-Augmented Engineering</span>
           </div>
         </div>
 
-        <div class="cert-card">
-          <div class="cert-icon-wrap">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          </div>
-          <div class="cert-info">
-            <h4>Generative AI Specialist</h4>
-            <p>Completed 2026 • Autonomous Agents & LLMs</p>
+        <div class="cert-mini">
+          <div class="cert-badge-dot">✓</div>
+          <div class="cert-text">
+            <h5>Generative AI Specialist</h5>
+            <span>Completed 2026 • Autonomous Agents & LLMs</span>
           </div>
         </div>
 
-        <div class="cert-card">
-          <div class="cert-icon-wrap">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-          </div>
-          <div class="cert-info">
-            <h4>RAG AI Chatbot Architecture</h4>
-            <p>Completed 2026 • Retrieval-Augmented Generation</p>
+        <div class="cert-mini">
+          <div class="cert-badge-dot">✓</div>
+          <div class="cert-text">
+            <h5>RAG AI Chatbot Architecture</h5>
+            <span>Completed 2026 • Retrieval-Augmented Gen</span>
           </div>
         </div>
 
-        <!-- Education Section -->
-        <h2 class="section-title">
-          <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+        <!-- Education -->
+        <h2 class="sec-heading">
+          <svg class="sec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
           Education
         </h2>
 
-        <div class="edu-card">
+        <div class="edu-box">
           <div class="edu-degree">B.Tech in Information Technology</div>
-          <div class="edu-inst">Sri Sairam Engineering Institutions</div>
-          <div class="edu-year">2020 – 2024 • First Class</div>
+          <div class="edu-school">Sri Sairam Engineering Institutions</div>
+          <div class="edu-dates">2020 – 2024 • First Class</div>
         </div>
 
-      </aside>
+      </div>
 
     </div>
 
@@ -1036,7 +909,7 @@
 
   <div id="copyToast">✅ Plain Text CV copied to clipboard!</div>
 
-  <!-- Interactive JavaScript for Plain Text Copying -->
+  <!-- Clipboard JS Script -->
   <script>
     function copyPlainText() {
       const text = `VARUN ST
@@ -1051,12 +924,11 @@ PROFESSIONAL SUMMARY
 Results-driven Senior Mendix Developer & Module Lead with 3.0 Years of Experience specializing in enterprise rapid application delivery, core Java microservices, and AI-augmented automation. Proven track record architecting mission-critical platforms for marquee clients including Indus Towers, KPMG, KHDA Dubai (Government of Dubai), Dr. Reddy’s Laboratories, and Adani Group. Maintained a 100% On-Time Go-Live Record across 11 enterprise applications, executing triple concurrent delivery across multiple accounts with zero defects. Certified Mendix Advanced Developer.
 
 CORE TECHNICAL COMPETENCIES
-- Low-Code Platform: Mendix 9 & 10 (Studio Pro), Domain Modeling, Microflows, Nanoflows, Task Queues, XPath Optimization, Workflow Engine, Security & Multi-Tenancy.
+- Low-Code: Mendix 9 & 10 (Studio Pro), Domain Modeling, Microflows, Nanoflows, Task Queues, XPath Optimization, Workflow Engine, Security & Multi-Tenancy.
 - Programming & Backend: Core Java (Java 17/21), Custom Java Actions, Concurrency & Multithreading, RESTful APIs, OData v4, SOAP, JSON/XML.
-- Databases: PostgreSQL, MS SQL Server, Relational Modeling, Index Optimization, Connection Pooling.
-- Testing & Quality: Playwright Automated E2E Testing, Mendix ATS, Unit Testing, Regression Validation.
-- AI & Modern Toolchains: Mendix Maia, LLM API Integration (Claude, OpenAI), Prompt Engineering, RAG Architecture.
-- Methodologies: Agile / Scrum, Module Leadership, Sprint Backlog Grooming, Code Reviews, Bilingual (RTL Arabic) Localization.
+- Databases & Testing: PostgreSQL, MS SQL Server, Relational Modeling, Index Optimization, Playwright E2E Testing, Mendix ATS, Postman.
+- AI & Modern Toolchains: Mendix Maia, LLM API Integration (Claude, OpenAI), Prompt Engineering, RAG Architecture, Arabic (RTL) Localization.
+- Methodologies: Agile / Scrum, Module Leadership, Sprint Backlog Grooming, Code Reviews.
 
 PROFESSIONAL EXPERIENCE
 RapidData Technologies — Chennai, India
